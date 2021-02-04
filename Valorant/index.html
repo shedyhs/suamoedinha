@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./valorant.css">
+    <link rel="icon" href="./../assets/img/icon_site.svg">
+    <title>Valorant Points para Real</title>
+</head>
+
+<body>
+    <header> Valorant points para real</header>
+
+
+    <h1>Valorant Points para Real</h1>
+
+    <div class="cotacao">
+        <span class="real">BRL </span>
+        <input type="text" oninput="realParaPontos()" onfocus="this.setSelectionRange(0, this.value.length); aumentaLargura()" onfocusout="diminuiLargura();" value="14.90" id="real" style="width: 4ch;">
+        <span class="opcional">vale</span>
+        <span class="pontos">VP </span>
+        <input type="text" oninput="pontosParaReal()" onfocus="this.setSelectionRange(0, this.value.length); aumentaLargura()" onfocusout="diminuiLargura();" value="500" id="pontos" style="width: 3ch;">
+    </div>
+
+    <article id="conteudo">
+        <div id="sobre_vp">
+            <h2>O que é o Valorant Point?</h2>
+
+            <p>O Valorant Points (VP) é a moeda utilizada dentro do jogo da Riot Games para comprar skins no Valorant. No jogo possui pacotes de 500, 1050, 2175, 3850, 5550, 11500 Valorant Points.</p>
+        </div>
+
+        <div id="cotacao_pacotes">
+            <h2>Quais são os preços dos pacotes de VP?</h2>
+            <table>
+                <tr>
+                    <th>Pacote</th>
+                    <th>Valor</th>
+                    <th>VP</th>
+                    <th>VP/BRL</th>
+                </tr>
+                <tr>
+                    <td>Pacote 1</td>
+                    <td>14.90</td>
+                    <td>500</td>
+                    <td>33.56</td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>Pacote 2</td>
+                        <td>29.90</td>
+                        <td>1050</td>
+                        <td>35.12</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote 3</td>
+                        <td>59.90</td>
+                        <td>2175</td>
+                        <td>36.31</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote 4</td>
+                        <td>104.90</td>
+                        <td>3850</td>
+                        <td>36.70</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote 5</td>
+                        <td>149.90</td>
+                        <td>5550</td>
+                        <td>37.02</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote 6</td>
+                        <td>299.90</td>
+                        <td>11500</td>
+                        <td>38.35</td>
+                    </tr>
+                </tr>
+            </table>
+        </div>
+
+        <div id="cotacao_vp">
+            <h2>Qual é o valor do Valorant point?</h2>
+
+            <p>A <strong>cotação do Valorant Points para real</strong> é de 33.56 VP : R$ 1,00 (Baseado nos pacotes sem bonus.)</p>
+            <p>A cotação do Valorant Points é meramente informativa. </p>
+        </div>
+
+        <div id="preco_skins">
+            <h2>Qual o preço das skins?</h2>
+
+            <p>Atualmente, o game conta com cinco edições de skins: Selecionada, Deluxe, Premium, Ultra e Exclusiva. A diferença entre elas está nos detalhes, nas animações e nos efeitos, e é por conta desses mesmos quesitos que os preços de cada skin diferem.</p>
+
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Abreviação</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Edição Selecionada</td>
+                    <td>ES</td>
+                    <td>875 VP</td>
+                </tr>
+                <tr>
+                    <td>Edição Deluxe</td>
+                    <td>ED</td>
+                    <td>1275 VP</td>
+                </tr>
+                <tr>
+                    <td>Edição Premium</td>
+                    <td>EP</td>
+                    <td>1775 VP</td>
+                </tr>
+                <tr>
+                    <td>Edição Ultra</td>
+                    <td>EU</td>
+                    <td>2475 VP</td>
+                </tr>
+                <tr>
+                    <td>Edição Exclusiva</td>
+                    <td>EE</td>
+                    <td>Varia</td>
+                </tr>
+            </table>
+        </div>
+    </article>
+
+    <script src="./valorant.js"></script>
+</body>
+
+
+</html>
