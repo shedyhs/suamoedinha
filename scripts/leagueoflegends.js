@@ -22,19 +22,6 @@ const RP_PC4 = 5000;
 const RP_PC5 = 7200;
 const RP_PC6 = 15000;
 
-function aumentaLargura() {
-
-    real.style.width = "15%";
-    pontos.style.width = "15%";
-}
-
-function diminuiLargura() {
-
-    real.value = parseFloat(real.value).toFixed(2)
-    real.style.width = real.value.length + "ch";
-    pontos.style.width = pontos.value.length + "ch";
-    isNaN(document.getElementById('real').value[0]) ? document.getElementById('real').value = 0.00 : document.getElementById('real').value
-}
 
 function realParaPontos() {
 

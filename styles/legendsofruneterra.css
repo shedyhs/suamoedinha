@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'LegendsOfRuneterra';
+    src: url('./../assets/fonts/Legends_of_Runeterra.ttf') format('truetype');
+}
+
+.game-converter {
+    font-family: 'LegendsOfRuneterra';
+}
+
+.game-converter .game-points-logo {
+    background: transparent url(./../assets/img/Lor_points.png) no-repeat center center;
+    background-size: 200px;
+    height: 200px;
+}
+
+.converter span {
+    color: #c8b567;
+    font-weight: bold;
+}
+
+.opcional {
+    font-size: 2rem;
+}
+
+.converter input[type="text"] {
+    font-weight: bold;
+    font-family: 'LegendsOfRuneterra';
+}
+
+table td,
+table th {
+    border: 1px solid #004650;
+}
+
+table th {
+    background-color: #004650;
+}

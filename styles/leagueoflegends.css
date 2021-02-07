@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'LeagueOfLegends';
+    src: url('./../assets/fonts/Friz_Quadrata_Regular.ttf') format('truetype');
+}
+
+.game-converter {
+    font-family: 'LeagueOfLegends';
+}
+
+.game-converter .game-points-logo {
+    background: transparent url(./../assets/img/rp.png) no-repeat center center;
+    background-size: 200px;
+    height: 250px;
+}
+
+.converter span {
+    color: #c8b567;
+}
+
+.converter input[type="text"] {
+    font-family: 'LeagueOfLegends';
+}
+
+table td,
+table th {
+    border: 1px solid #004650;
+}
+
+table th {
+    background-color: #004650;
+}

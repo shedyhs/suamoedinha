@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Valorant';
+    src: url('./../assets/fonts/Valorant_Font.ttf') format('truetype');
+}
+
+.game-converter {
+    font-family: 'Valorant';
+}
+
+.game-converter .game-points-logo {
+    background: transparent url(./../assets/img/valorant_points.png) no-repeat center center;
+    background-size: 200px;
+    height: 200px;
+}
+
+.converter span {
+    color: #fa4454;
+}
+
+.converter input[type="text"] {
+    font-family: 'Valorant';
+}
+
+table td,
+table th {
+    border: 1px solid #fa4454;
+}
+
+table th {
+    background-color: #fa4454;
+}

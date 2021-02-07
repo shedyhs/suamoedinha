@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script data-ad-client="ca-pub-8698315652685540" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="icon" href="./assets/icon/icon_site.svg">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/legendsofruneterra.css">
+    <title>Sua Moedinha - LoR</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="menu">
+            <span class="icon icon-menu" href="#" onclick="abrirMenu()"></span>
+            <span class="sua-moedinha">Sua Moedinha</span>
+        </a>
+        <a href="https://discord.gg/8YJEPgaC7v" target="_blank" rel="noopener noreferrer" class="discord">
+            <span class="icon icon-discord"></span>
+        </a>
+    </header>
+
+
+    <aside>
+        <nav class="navbar" id="menu" onclick="fecharMenu()" onmouseleave="fecharMenu()">
+            <a href="./index.html " class="nav-item ">
+                <span class="icon icon-valorant "></span>
+                <span>Valorant</span>
+            </a>
+            <a href="./lol.html " class="nav-item ">
+                <span class="icon icon-league-of-legends "></span>
+                <span href="./lol.html ">League of Legends</span>
+            </a>
+            <a href="./lor.html " class="nav-item ">
+                <span class="icon icon-legends-of-runeterra "></span>
+                <span href="./lor.html ">Legends of Runetera</span>
+            </a>
+            <a href="./apoio.html " class="nav-item ">
+                <span class="icon icon-apoio apoio "></span>
+                <span href="./apoio.html ">Apoie os criadores</span>
+            </a>
+        </nav>
+    </aside>
+    <main>
+        <div class="game-converter">
+            <h1 class="game-points-logo">Coins para Real</h1>
+            <div class="converter">
+                <span class="real">BRL </span>
+                <input type="text" oninput="realParaPontos()" onfocus="this.setSelectionRange(0, this.value.length); aumentaLargura()" onfocusout="diminuiLargura();" value="14.90" id="real" style="width: 5ch;">
+                <span class="opcional">vale</span>
+                <span class="pontos">Coins </span>
+                <input type="text" oninput="pontosParaReal()" onfocus="this.setSelectionRange(0, this.value.length); aumentaLargura()" onfocusout="diminuiLargura();" value="500" id="pontos" style="width: 3ch;">
+            </div>
+        </div>
+        <article class="conteudo">
+            <div id="sobre_Coins">
+                <h2>O que são os Coins?</h2>
+
+                <p>O Coins é a moeda utilizada dentro do jogo da Riot Games para comprar skins de tabuleiro, guardiões, espelho de cartas, passe de batalha e cartas curingas no Legends Of Runeterra. No jogo possui pacotes de 500, 1050, 2175, 3850, 5550,
+                    11500 Coins.
+                </p>
+            </div>
+
+            <div id="cotacao_pacotes">
+                <h2>Quais são os preços dos pacotes de Coins?</h2>
+                <table>
+                    <tr>
+                        <th>Pacote</th>
+                        <th>Valor</th>
+                        <th>Coins</th>
+                        <th>Coins/BRL</th>
+                    </tr>
+                    <tr>
+                        <td>Pacote 1</td>
+                        <td>14.90</td>
+                        <td>500</td>
+                        <td>33.56</td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>Pacote 2</td>
+                            <td>29.90</td>
+                            <td>1050</td>
+                            <td>35.12</td>
+                        </tr>
+                        <tr>
+                            <td>Pacote 3</td>
+                            <td>59.90</td>
+                            <td>2175</td>
+                            <td>36.31</td>
+                        </tr>
+                        <tr>
+                            <td>Pacote 4</td>
+                            <td>104.90</td>
+                            <td>3850</td>
+                            <td>36.70</td>
+                        </tr>
+                        <tr>
+                            <td>Pacote 5</td>
+                            <td>149.90</td>
+                            <td>5550</td>
+                            <td>37.02</td>
+                        </tr>
+                        <tr>
+                            <td>Pacote 6</td>
+                            <td>299.90</td>
+                            <td>11500</td>
+                            <td>38.35</td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="cotacao_Coins">
+                <h2>Qual é o valor do Coins?</h2>
+
+                <p>A <strong>cotação do Coins para real</strong> é de 33.56 Coins : R$ 1,00 (Baseado nos pacotes sem bonus.)</p>
+                <p>A cotação do Coins é meramente informativa. </p>
+            </div>
+
+            <div id="preco_skins">
+                <h2>Qual o preço das skins?</h2>
+
+                <p>Atualmente, o game conta com 4 tipos de cartas curingas: Comum, Raro, Épico e Campeão. A diferença entre elas está nos detalhes, nas animações e nos efeitos, e é por conta desses mesmos quesitos que os preços de cada skin diferem.
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>Curinga Comum</td>
+                        <td>10 Coins</td>
+                    </tr>
+                    <tr>
+                        <td>Curinga Raro</td>
+                        <td>30 Coins</td>
+                    </tr>
+                    <tr>
+                        <td>Curinga Épico</td>
+                        <td>120 Coins</td>
+                    </tr>
+                    <tr>
+                        <td>Curinga Campeão</td>
+                        <td>300 Coins</td>
+                    </tr>
+                    <tr>
+                        <td>Verso de Cartas</td>
+                        <td>490 Coins</td>
+                    </tr>
+                    <tr>
+                        <td>Emotes</td>
+                        <td>190 Coins</td>
+                    </tr>
+                    <tr>
+                        <td>Guardiões</td>
+                        <td>590 Coins</td>
+                    </tr>
+                    <tr>
+                        <td>Tabuleiros</td>
+                        <td>Varia</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/valorant.js"></script>
+</body>
+
+</html>

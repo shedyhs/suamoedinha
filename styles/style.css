@@ -1,0 +1,257 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('./../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+body {
+    background: rgb(36, 36, 36);
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+
+/* Handle */
+
+body::-webkit-scrollbar-thumb {
+    background: #383838;
+}
+
+
+/* Handle on hover */
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+header {
+    width: 100vw -7px;
+    background: rgb(56, 56, 56);
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon,
+.icon:hover {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    filter: brightness(0);
+}
+
+.icon-menu,
+.icon-menu:hover {
+    margin-left: 5px;
+    background: url('./../assets/icon/menu.svg') no-repeat center;
+    background-size: 1.5rem;
+    filter: invert(83%) sepia(29%) saturate(17%) hue-rotate(346deg) brightness(93%) contrast(93%);
+}
+
+.sua-moedinha {
+    width: auto;
+    font-size: 3rem;
+    margin-left: 15px;
+    font-family: 'BebasNeue';
+    color: #ccc;
+    align-items: center;
+}
+
+.navbar {
+    max-width: 25vw;
+    width: 0px;
+    position: sticky;
+    z-index: 5;
+    background: rgb(66, 66, 66);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.nav-item {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.nav-item:hover {
+    background: rgb(75, 75, 75);
+}
+
+.nav-item .icon {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 10px;
+}
+
+.nav-item>span {
+    font-weight: bold;
+    color: #ccc;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+
+.icon-valorant,
+.icon-valorant:hover {
+    background: url('./../assets/icon/Valorant_points.svg') no-repeat center;
+    background-size: 3.5rem;
+    filter: invert(40%) sepia(85%) saturate(2742%) hue-rotate(329deg) brightness(98%) contrast(100%);
+}
+
+.icon-league-of-legends,
+.icon-league-of-legends:hover {
+    background: url('./../assets/icon/Riot_points.svg') no-repeat center;
+    background-size: 4rem;
+    filter: invert(77%) sepia(51%) saturate(592%) hue-rotate(355deg) brightness(93%) contrast(90%);
+}
+
+.icon-legends-of-runeterra,
+.icon-legends-of-runeterra:hover {
+    background: url('./../assets/icon/legends_of_runeterra.svg') no-repeat center;
+    background-size: 3.5rem;
+    filter: invert(78%) sepia(30%) saturate(715%) hue-rotate(347deg) brightness(104%) contrast(98%);
+}
+
+.icon-apoio,
+.icon-apoio:hover {
+    background: url('./../assets/icon/Apoie.svg') no-repeat center;
+    background-size: 4rem;
+    filter: invert(67%) sepia(63%) saturate(5044%) hue-rotate(158deg) brightness(89%) contrast(101%);
+}
+
+.icon-discord,
+.icon-discord:hover {
+    background: url('./../assets/icon/Discord.svg') no-repeat center;
+    background-size: 4rem;
+    margin-right: 40px;
+    filter: invert(23%) sepia(29%) saturate(17%) hue-rotate(346deg) brightness(93%) contrast(93%);
+}
+
+.game-converter {
+    margin-top: -5rem;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-converter .game-points-logo {
+    background-repeat: no-repeat;
+    text-indent: -999999px;
+}
+
+.converter {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.converter span {
+    font-size: 2.5rem;
+}
+
+.converter .opcional {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 0px 15px;
+}
+
+.converter input[type="text"] {
+    padding: 7px;
+    background: transparent;
+    border: none;
+    text-align: right;
+    font-size: 2em;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.converter input[type="text"]:hover {
+    background: #c0c0c0;
+    color: rgb(36, 36, 36);
+}
+
+.converter input[type="text"]:hover:focus {
+    background: #c0c0c0;
+    color: rgb(36, 36, 36);
+}
+
+.converter input[type="text"]:focus {
+    outline: 0;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.conteudo {
+    margin: auto;
+    margin-top: 550px;
+    max-width: 700px;
+    color: #ccc;
+}
+
+.conteudo div {
+    margin: 25px;
+    padding: 10px;
+}
+
+.conteudo h2 {
+    font-size: 2rem;
+}
+
+.conteudo p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+table td,
+table th {
+    padding: 8px;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #ccc;
+}
